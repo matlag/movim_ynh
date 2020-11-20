@@ -6,20 +6,20 @@
         "en": "Web-based cross-platform XMPP client",
         "fr": "Client XMPP multiplateforme basé sur le Web"
     },
-    "version": "0.18~ynh2",
+    "version": "0.18.1rc5~ynh",
     "url": "https://movim.eu",
     "license": "AGPL-3.0-or-later",
     "maintainer": {
-        "name": "",
-        "email": ""
+        "name": "matlag",
+        "email": "matlag@chtisurel.net"
     },
     "requirements": {
-        "yunohost": ">= 3.8.1"
+        "yunohost": ">= 4.0.8"
     },
     "multi_instance": false,
     "services": [
         "nginx",
-        "php7.0-fpm",
+        "php7.3-fpm",
         "postgresql",
         "metronome"
     ],
