@@ -1,18 +1,21 @@
 # Movim pour YunoHost
 
+Paquet expérimental. Aucune intégration testée.
+<!--
 [![Integration level](https://dash.yunohost.org/integration/movim.svg)](https://dash.yunohost.org/appci/app/movim) ![](https://ci-apps.yunohost.org/ci/badges/movim.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/movim.maintain.svg)  
 [![Installer Movim avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=movim)
+-->
 
 *[Read this readme in english.](./README.md)* 
 
-> *Ce package vous permet d'installer Movim rapidement et simplement sur un serveur YunoHost.  
+> *Ce paquet expérimental vous permet d'installer la toute dernière version de Movim sur un serveur YunoHost.  
 Si vous n'avez pas YunoHost, consultez [le guide](https://yunohost.org/#/install) pour apprendre comment l'installer.*
 
 ## Vue d'ensemble
 
 [Movim](https://movim.eu) est un réseau social décentralisé, écrit en PHP et HTML5 et basé sur le protocole standard XMPP.
 
-**Version incluse :** 0.18
+**Version incluse :** 0.18.1rc5
 
 ## Captures d'écran
 
@@ -40,8 +43,11 @@ Si vous n'avez pas YunoHost, consultez [le guide](https://yunohost.org/#/install
 
 #### Architectures supportées
 
+Testé seulement sur 2 serveurs x86-64
+<!--
 * x86-64 - [![Build Status](https://ci-apps.yunohost.org/ci/logs/movim%20%28Apps%29.svg)](https://ci-apps.yunohost.org/ci/apps/movim/)
 * ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/ci/logs/movim%20%28Apps%29.svg)](https://ci-apps-arm.yunohost.org/ci/apps/movim/)
+-->
 
 ## Limitations
 
@@ -51,12 +57,23 @@ Si vous n'avez pas YunoHost, consultez [le guide](https://yunohost.org/#/install
 
 ## Liens
 
- * Signaler un bug : https://github.com/YunoHost-Apps/movim_ynh/issues
+ * Signaler un bug : https://github.com/matlag/movim_ynh/issues
  * Site de l'application : https://movim.eu/
  * Dépôt de l'application principale : https://github.com/movim/movim
  * Site web YunoHost : https://yunohost.org/
 
 ---
+
+## Installation pour utilisateur aventurier
+```
+sudo yunohost app install https://github.com/matlag/movim_ynh
+```
+
+## Mise-à-jour pour utilisateur aventurier
+Je recommenderais plutôt de simplement désinstaller la version actuelle de Movim et ré-installer cette version
+```
+sudo yunohost app upgrade movim -u https://github.com/matlag/movim_ynh
+```
 
 ## Developer info
 
