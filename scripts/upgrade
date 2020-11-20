@@ -148,7 +148,7 @@ chown -R $app $final_path/src/Movim/Bootstrap.php
 
 (
 	cd "$final_path"
-	curl -sS https://getcomposer.org/installer | php${phpversion} -- --version="1.10.16" --install-dir="$final_path" \
+	curl -sS https://getcomposer.org/installer | php${phpversion} -- --version="2.0.7" --install-dir="$final_path" \
 		&& php${phpversion} composer.phar config --global discard-changes true --quiet \
 		&& php${phpversion} composer.phar install --no-interaction --quiet
 )
